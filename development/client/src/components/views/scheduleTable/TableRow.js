@@ -61,7 +61,7 @@ const TableBody = (props) => {
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
       >
-        <td className="p-1 w-[5.5rem] md:w-28">
+        <td className="p-0 sm:p-1 w-[5.5rem] md:w-28">
           {formatHoursMinutes(props.item.startTime) +
             "-" +
             formatHoursMinutes(props.item.endTime)}
@@ -69,7 +69,7 @@ const TableBody = (props) => {
 
         <td
           onClick={extraInfoHandler}
-          className="text-left w-full xsmm:w-40 sm:w-60 xl:w-80 p-1 md:p-2 lg:hover:font-semibold duration-200"
+          className="text-left xsmm:w-32 sm:w-60 xl:w-80 p-1 md:p-2 lg:hover:font-semibold duration-200"
         >
           <div className="flex flex-col text-left  md:flex-row md:justify-between">
             <div className="">
@@ -83,7 +83,7 @@ const TableBody = (props) => {
           </div>
         </td>
 
-        <td className="p-1 w-full md:p-2 xsmm:w-40 sm:w-60 xl:w-80 text-left">
+        <td className="p-1  md:p-2 xsmm:w-32 sm:w-60 xl:w-80 text-left">
           {joinLecturers(props.item)}
         </td>
         
@@ -95,7 +95,7 @@ const TableBody = (props) => {
                 !showEdit && props.admin && !props.item.distanceLink
                   ? "justify-center"
                   : "pl-2 space-x-2 justify-between"
-              } xs:justify-center  xs:space-x-8 lg:justify-end lg:space-x-4 lg:w-14${
+              } xsmm:justify-center  xs:space-x-8 lg:justify-end lg:space-x-4 lg:w-14${
                 props.item.rooms ? "" : "md:w-full"
               } pt-1 pr-1 md:pr-0 md:pt-0`}
             >
