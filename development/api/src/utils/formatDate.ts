@@ -11,6 +11,7 @@ const formatDate ={
         //   }
         
 
+        
     if (inputdate.includes("T")) {
         const splitActualDate = inputdate.split("T");
         inputdate = splitActualDate[0];
