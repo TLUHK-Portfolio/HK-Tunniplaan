@@ -359,13 +359,6 @@ const Home = () => {
     })
     setNewOccurenceAdded(prevState => prevState = !prevState);
   };
-  // const userPicture = admin
-  //   ? "https://images.pexels.com/photos/3790811/pexels-photo-3790811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  //   : userLecturer
-  //   ? "https://images.pexels.com/photos/4342401/pexels-photo-4342401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  //   : userStudent
-  //   ? "https://images.pexels.com/photos/13180055/pexels-photo-13180055.jpeg?auto=compress&cs=tinysrgb&w=1600"
-  //   : require("../assets/icons/user.png");
 
   const userRole = admin
     ? "HALDUR"
@@ -436,14 +429,6 @@ const Home = () => {
     onError: (error) => console.log("Login Failed:", error), // kui google esmasel pöördumisel juba tekkis viga
   });
 
-  // if (localStorage.getItem('localGoogleProfile')) {
-  // setGoogleProfile = JSON.parse(localStorage.getItem('localGoogleProfile'));
-  // console.log ("tagastatud google profile",JSON.parse(localStorage.getItem('localGoogleProfile')));
-
-  // }
-
-  // console.log ("tagastatud google profile",JSON.parse(localStorage.getItem('localGoogleProfile')));
-  // console.log("see on õige loginInfo",loginInfo);
   useEffect(() => {
     setUserPicture(
       googleProfile?.picture ?? require("../assets/icons/user.png")

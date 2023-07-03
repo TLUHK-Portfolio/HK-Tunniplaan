@@ -109,7 +109,7 @@ export const Header = (props) => {
                       </button>
                     )}
 
-                    <button
+                    {/* <button
                       onClick={userRollHandler}
                       className="btn-period"
                       type="button"
@@ -142,8 +142,8 @@ export const Header = (props) => {
                       >
                         Kasutajate haldus
                       </button>
-                    )}
-                    {!localStorage.getItem("token") && showMockLogin && (
+                    )} */}
+                    {/* {!localStorage.getItem("token") && showMockLogin && (
                       <button
                         onClick={userRollHandler}
                         className="btn-period"
@@ -152,7 +152,7 @@ export const Header = (props) => {
                       >
                         Logi välja (mock)
                       </button>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

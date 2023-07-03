@@ -46,16 +46,6 @@ const MobileMenu = (props) => {
                 <button
                   onClick={props.login}
                   className="btn-m-menu"
-                  type="button"
-                  name="Login Google"
-                >
-                  Google konto
-                </button>
-              )}
-
-              {localStorage.getItem("token") && (
-                <button
-                  onClick={props.logOut}
                   className="btn-m-menu"
                   type="button"
                   name="Logout Google"
@@ -73,7 +63,7 @@ const MobileMenu = (props) => {
                   KASUTAJATE HALDUS
                 </button>
               )}
-
+{/* 
               {!localStorage.getItem("token") &&
                 props.userRoll !== "LOGI SISSE" && (
                   <button
@@ -108,7 +98,7 @@ const MobileMenu = (props) => {
                 className="btn-m-menu"
               >
                 Õpilane (mock)
-              </button>
+              </button> */}
               <a
                 className="btn-m-menu text-center"
                 target="_blank"
